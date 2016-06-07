@@ -1,0 +1,67 @@
+@brand-primary: darken(#428bca, 6.5%); // #337ab7
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+@gray-darker:  lighten(#000, 13.5%); // #222
+@gray-dark:    lighten(#000, 20%);   // #333
+@gray:         lighten(#000, 33.5%); // #555
+@gray-light:   lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+@color1: #06aed5; //rgba(6, 174, 213, 100)
+@color2: #086788; //rgba(8, 103, 136, 100)
+@color3: #f0c808; //rgba(240, 200, 8, 100)
+@color4: #fff1d0; //rgba(255, 241, 208, 100)
+@color5: #dd1c1a; //rgba(221, 28, 26, 100)
+@color6:  #3d9970;
+@color7: #FEFE91;
+@color8: #006065;
+
+
+
+body {
+	background: @color8;
+   margin-left: 10px;
+   text-align: center;
+}
+
+input {
+  position:relative;
+// 		  outline: 2px dashed @brand-info;
+	// border-bottom: 1px dashed @gray-darker;
+	cursor: pointer;
+}
+
+label {
+	 color:  @color4;
+   font-size: 30px;
+
+}
+
+// .d3js{
+//    color:  @color4;
+//       font-size: 20px;
+
+// }
+
+.dataviz{
+  margin-left: 20px;
+  // position:absolute;
+}
+
+h1, h2, h3 {
+	color: @color3;
+
+}
+
+#curcle {
+
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+  border: 1px solid @color3;
+  left:  153px;
+  top: 325px;
+  position:absolute;
+
+}

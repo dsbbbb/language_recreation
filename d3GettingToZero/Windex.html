@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>Input test (circle)</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="http://www.danielsilber-baker.com/d3GettingToZero/styles.less" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-16">
+                <h2>New York </h2>
+                <label for="nRadius">
+                    If we released 
+                    <span id="nRadius-value">…</span> % of non-violent offenders in New York
+                </label>
+                <input type="range" min="0" max="1" step=".01" id="nRadius"> 
+            </div>
+            <div class="row">
+                <div id="curcle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="underscore.js"></script>
+    <script>
+
+d3.csv('prisonState.csv', function(data) {
+  nRadius.value = 0.01;
+console.log(nRadius.value);
+var total = 52518;
+var totalNonViolent = d3.round(total*.47);
+
+var totalRadius = d3.round(52518/300);
+console.log(totalRadius);
+
+
+
+var width = 800;
+var height = 800;
+var holder = d3.select("body")
+.append("svg")
+.attr("width", width)
+.attr("height", height);
+
+// draw the circle
+holder.append("circle")
+.attr("cx", 300)
+.attr("cy", 350)
+.style("fill", "#3d9970")
+.style("stroke", "blue")
+.attr("r", 175);
+
+
+
+holder.append('text')
+.attr("class", "d3js")
+.attr('x', 5)
+.attr('y', 120)
+.text("it would reduce the number of humans inprisoned to " + "?" )
+.style('font-size', 35)
+.style('fill', '#fff1d0');
+
+
+// when the input range changes update the circle 
+d3.select("#nRadius").on("input", function() {
+  update(+this.value);
+});
+
+// Initial starting radius of the circle 
+update(175);
+
+// update the elements
+function update(nRadius) {
+var zero = d3.format(",");
+var updatedNonViolent= totalNonViolent *nRadius;
+var updatedTotal = total - updatedNonViolent;
+var formatedX = d3.round(updatedTotal);
+var completedFormat = zero(formatedX);
+console.log(formatedX);
+console.log(updatedTotal);
+// adjust the text on the range slider
+  d3.select("#nRadius-value").text(nRadius);
+  d3.select(".d3js").text("it would reduce the imprisoned number of humans to " + completedFormat)
+  d3.select("#nRadius").property("value", nRadius);
+  
+  console.log(updatedTotal);
+  console.log(nRadius);
+
+  // update the circle radius
+  // var updatedTotal = totalNonViolent* nRadius;
+  // console.log(updatedTotal);
+  holder.selectAll("circle") 
+    .attr("r", updatedTotal/300 );
+   
+    // holder.selectAll(".square") 
+    // .attr("r", 50)
+
+}
+// total…</span>  Which would save the taxpayers of New York [[$greenbackSave]]
+// when the input range changes update the circle
+
+});
+</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>

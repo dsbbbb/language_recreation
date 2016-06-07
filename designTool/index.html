@@ -1,0 +1,179 @@
+<!doctype html>
+<!-- <html class="no-js" lang=""> -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generative Interactive Literacy: Annotations Framework</title>
+    <meta name="author" content="Kushagra Gour">
+    <meta name="description" content="Animate any element onto another element.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="image_src" href="hint.png"/>
+<!-- <script src="velocity/velocity.ui.js"></script>
+<script src="blast/jquery.blast.js"> </script> -->
+<script src=http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js></script>
+<script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script src= "https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"> </script>
+<link href='https://fonts.googleapis.com/css?family=Lato00,300' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- <script src="annotator/annotator-full.min.js"></script> -->
+<link rel="stylesheet" href="annotator/annotator.min.css">
+<link href='https://fonts.googleapis.com/css?family=Fira+Sans00,300' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="style.css">
+
+    
+  </head>
+  <body>
+
+ <div id="content"> 
+<button id="toggle" class="fa-eye"></button>
+
+
+ <h1> 
+W.E.B. Du Bois (1868–1963).  The Souls of Black Folk.  1903.</h1>
+<h2>Chapter I.
+Of Our Spiritual Strivings </h2>
+
+
+<div class="instructions">
+
+ <h4> What are the questions between you and the world?</h4>
+<!-- <div id="m2-div"></div> -->
+<!-- <label for="textarea-a" id="textarea-a";></label> -->
+<textarea name="textarea" id="textarea-a" style=" margin-left: 90px; height:200px; width:400px; font-size:16px; line-height: 1.125em; text-align: left";> Use this space to reflect on what questions or issues seperate you and the world</textarea>
+</div>
+
+<div class="code">
+ BETWEEN me and the other world there is ever an unasked question:</div>
+<div class="instructions">
+See What Others Have Said
+
+<div id = "response"> <img src="img1.jpg"  style="width:50px;height:50px;"> OMG Amazing, I have all the questions! </div>
+
+<div id = "response"> <img src="img3.jpg"  style="width:50px;height:50px;"> Who am I? </div>
+
+
+
+
+
+ <!--  <button class = "users">See what other people have said</button>
+   <button class = "users">Add your own (make a user input box here also</button>
+   <button class = "users">See top tags and comments from this passage</button>
+  <p>Maybe an animation as part of this? Or like a diagram thing that points to specific places/parts--maybe like make some arrows and boxes in illustrator? Thinkin kinda like the processing generative art book</p> -->
+</div>
+<div class="code">
+  
+  unasked by some through feelings of delicacy; by others through the difficulty of rightly framing it. All, nevertheless, flutter round it. They approach me in a half-hesitant sort of way, eye me curiously or compassionately, and then, instead of saying directly, How does it feel to be a problem? they say, I know an excellent colored man in my town; or, I fought at Mechanicsville; or, Do not these Southern outrages make your blood boil? At these I smile, or am interested, or reduce the boiling to a simmer, as the occasion may require. 
+</div>
+
+<div class="instructions">
+  <p>This function prints 1 to 100 with "fizz" taking the place of any multiple of 3, "buzz" taking the place of any multiple of 5, and "fizzbuzz" taking the place of any multiple of both 3 and 5.</p>
+  <p>Now that our function is defined, all we need to do is call it.</p>
+</div>
+<div class="code">
+To the real question, How does it feel to be a problem? I answer seldom a word.
+</div>
+<script>
+function toggleClass (el, className) {
+  if (el.classList) {
+    el.classList.toggle(className);
+  } else {
+    var classes = el.className.split(' ');
+    var existingIndex = classes.indexOf(className);
+
+    if (existingIndex >= 0)
+      classes.splice(existingIndex, 1);
+    else
+      classes.push(className);
+
+    el.className = classes.join(' ');
+  }
+}
+
+var body = document.body;
+var toggle = document.getElementById('toggle');
+
+hljs.initHighlightingOnLoad();
+toggle.addEventListener('click', function () {
+  toggleClass(body, 'instructions-hidden');
+  toggleClass(toggle, 'fa-eye');
+  toggleClass(toggle, 'fa-eye-slash');
+}, false);
+
+</script>
+
+
+<!-- 
+ <div id="content">  -->
+
+
+
+<div id="card"> 
+  <div class="front"> 
+ BETWEEN me and the other world there is ever an unasked question:
+  </div> 
+  <div class="back">
+    Back content
+  </div> 
+</div>
+<!-- <div id = "code"> -->
+ <div id = "hfh" class="horizontal-flip-hover" data-back= "Can you think of any unasked questions between the world and you? What is the connection between this and Tanahasi Coates book, Between the World and Me? " data-front="And yet, being a problem is a strange experience, ">And yet, being a problem is a strange experience,</div>
+
+
+<div id = "rest"> 
+
+ —peculiar even for one who has never been anything else, save perhaps in babyhood and in Europe. It is in the early days of rollicking boyhood that the revelation first bursts upon one, all in a day, as it were. I remember well when the shadow swept across me. I was a little thing, away up in the hills of New England, where the dark Housatonic winds between Hoosac and Taghkanic to the sea. In a wee wooden schoolhouse, something put it into the boys’ and girls’ heads to buy gorgeous visiting-cards—ten cents a package—and exchange. The exchange was merry, till one girl, a tall newcomer, refused my card,—refused it peremptorily, with a glance. Then it dawned upon me with a certain suddenness that I was different from the others; or like, mayhap, in heart and life and longing, but shut out from their world by a vast veil. I had thereafter no desire to tear down that veil, to creep through; I held all beyond it in common contempt, and lived above it in a region of blue sky and great wandering shadows. That sky was bluest when I could beat my mates at examination-time, or beat them at a foot-race, or even beat their stringy heads. Alas, with the years all this fine contempt began to fade; for the worlds I longed for, and all their dazzling opportunities, were theirs, not mine. But they should not keep these prizes, I said; some, all, I would wrest from them. Just how I would do it I could never decide: by reading law, by healing the sick, by telling the wonderful tales that swam in my head,—some way. With other black boys the strife was not so fiercely sunny: their youth shrunk into tasteless sycophancy, or into silent hatred of the pale world about them and mocking distrust of everything white; or wasted itself in a bitter cry, Why did God make me an outcast and a stranger in mine own house? The shades of the prison-house closed round about us all: walls strait and stubborn to the whitest, but relentlessly narrow, tall, and unscalable to sons of night who must plod darkly on in resignation, or beat unavailing palms against the stone, or steadily, half hopelessly, watch the streak of blue above. 
+<!-- <#!dsb to do!#> make this a display content-or like put this all in an array and set it as a variable outside the code to clean up code and make it tweakable as its own component </#!dsb to do!#> -->
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+    <script>
+    jQuery(function ($) {
+    $('#content').annotator()
+                 .annotator('setupPlugins')
+                 .annotator.authz.AclAuthzPolicy.prototype.permits(action, context, identity);
+});
+
+</script>
+   <script>
+
+var app = new annotator.App();
+app.include(annotator.ui.main);
+app.include(annotator.storage.http);
+app.start();
+
+
+</script>
+<script>
+$(body).annotator()
+       .annotator('setupPlugins', {tokenUrl: 'http://example.com/api/token'});
+
+    </script>
+
+    
+<script src="annotator/annotator-full.min.js"></script>
+    
+
+<script>
+new Vivus('m2-div', {type: 'oneByOne', duration: 400,  file: 'between.svg', animTimingFunction: Vivus.EASE_IN});
+</script>
+<!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+<script>
+$(function($) {
+  $("#card").flip(); 
+});
+</script>
+  
+
+  </body>
+</html>
