@@ -1,0 +1,29 @@
+
+
+body {
+
+  background: url(assets/artBoard.jpg);
+
+        /*background-image: url("archive/dsbShowBack.png");*/
+      /*background:#FEFCA2;*/
+      padding: 0; margin: 0;
+  
+} 
+    
+    canvas {
+    position: absolute;
+    /*z-index: -1;*/
+    /*vertical-align: top;*/
+      
+    } 
+
+.dot circle {
+  fill: lightsteelblue;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.dot circle.dragging {
+  fill: red;
+  stroke: brown;
+}

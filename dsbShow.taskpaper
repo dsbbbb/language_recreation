@@ -1,0 +1,104 @@
+DSB Show:
+		5 days map:
+			- Make mock up of the people.variable design using Bakhtin as an example
+				- starting in illustrator
+			- Finish outlining the story
+			- Flush out the other big bubbles
+				- Start with and at least Bakhtin 
+		1 week to go:
+			- Build the Archive-Collect text and media files (in scrivener?) to help build story
+				- Look for Ransby Ella Baker book online and in nyu archives to pull passages
+					- I'm into both pulling the text and in some cases those images are interesting to me for some reasons
+			- Figure out IGL backend for putting annotations on to a magic canvas
+				- clipboard solution @done
+				- 
+		
+		Meeting Day:
+			George:
+				- is it possible to get in the space a day or two (or even a couple hours) before to have a test run?
+				- How/who does set up work re:
+					- Chairs?
+					- Is there a a fold up stage? I thought I saw someone using it.
+				- What is the PA setup? Is it like a microphone with big speaker? 
+				- Do we have any clip on mics at ITP that I could use for the event
+				- How/can I get the following equipment from ITP
+					- Projector
+					- Something to project on (?)
+					- Video Cameras and tripods
+				- What kind of support would you suggest I have leading up to, and for technical/space support the day of?
+				-  is it okay to serve Champagne?
+				- What's the best set up for filming if it's still light out and the windows are shining light in? 
+				- Where do we put the tables we don't need? 
+				-  Is there a diagram for how to reset the room
+				- Will the cafe be open?
+				-  Do people have to show ID to get in? 
+				- Can we put a flyer on the front door to let people know they are  in the right place? 
+			
+			Lauren:
+				-  Prep to take here through quick over view of the show and the ideas (Freiere, world as an object of transformation, and the the non static reality through interactive literacy
+				
+				- show her some overall work in P5, then
+					- Original thisInstrument and then p5 generativedrawing
+					- Original getting to 0 (ask about Brett Victor and tangle) and then p5 version 
+				- connect her quote re: p5 sketch to IGL
+				
+				- 
+			- George 
+				- Notes from R-B
+					Questions for facilities guy: is it okay to serve Champagne? Do we need a permit? If so, will they look the other way?What's the best set up for filming if it's still light out and the windows are shining light in? Where do we put the tables we don't need? Do we have to reset the room how is was? Is there a diagram? Will the cafe be open? Do people how to show ID to get in? Can we put a flyer on the front door to let people know they are  in the right place? 
+					Are there other events in the building at the time? Do we have preference if we need to ask them to quiet down etc
+		May 30, 2016:
+			- trying to think about the backend scutcture of the show. Trying D3 node layout
+				- How/easily can I get data from say ithoughts or something easier to develop in, directly into json format. Maybe not through thought s but free mind or whatever, but the questions is how to get mind map into json format and then see how effective it might be as the structure for the presentation/stage/dia/g/ph/ram of the show
+		May 29, 2016:
+			- try putting words of show (A show about...) on to a canvas to manipulate them to mean what you mean/could mean
+				- @solutionToTry Ok try bringing text through blast js and then manipulate through green sock split text
+				- P5
+				- Cytsocsape and Fabric
+				- Blast js
+				- Gsapthat jQuery set of intractable
+				what do I want to be able to do
+					- Move text objects around
+					- Join them (Fabric?)
+					- Duplicate them
+					- 'run' them in some way (a function that is pressed by a button--written in what?)
+			- Try putting cytogram and fabric on to invite canvas
+			- Try using D3 to animate transition between dialectics/logics and Freiere Banking vs Problem Posing and what it means for us
+			- Find a good way to draw connections between things
+				- D3?
+				- Cityscape has that animation thing, try creating the dialectics and an infinity sign with that also
+		Meetings with professors:
+			Patrick:
+				- How do I carry the annotations around
+					- Ng-annotate text Angular
+					- Python?
+					- The backend that annotate js offers?
+		Today:
+			- Finish with strong outline of framework and where we're going from here.
+			Right Now:
+				- looking into setting up flask app for backend store of annotator. 
+	Annotate It JS Backend Development:
+		- I think I need to build a web app--which is a good idea anyways. Looks like Flask is one of the options, so perhaps I should try with that? Otherwise finish the npm or whatever we did in open dat class
+		- make sure its worth it
+		- use the consumer keys from http://annotateit.org/user/dsb510
+			key: 4343a1a8d53a4437a07c9faa5c66149f
+			secret: 0c74e9fd-6a02-4eaa-a329-c665d51e128b	
+	Getting Started:
+		- Set up capture 
+			- Evernote?
+			- Devonthink?
+		- Set up workspace
+		
+		
+		Building the Blocks:
+			- Zettelstein
+			- POS outline
+			- School project internee
+		right now:
+			- set up the codepen style multiple panes with the fabric js interactivty
+			- change the ugly highlighted part of this in less
+			- go through chrome plugins (do this later more)
+				- To get rid of
+				- To tinker with
+					- color space
+						to store and keep colors I like while browsing the web

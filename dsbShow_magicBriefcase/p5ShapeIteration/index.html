@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="vexjq/vex_all.css" />
+<script src="vexjq/jquery.js"></script>
+<script src="vexjq/vex.combined.js"></script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+<body>
+  <button id="vex_t3">Test Prompt</button>
+  
+<script>
+
+
+
+var vex_msg2 = 'Who are .. you?';   // message in the modal window
+
+// sets a function to be called when we need it (receives the string content)
+var vex_prompt1 = function(msg) {
+  // calls the vex.dialog.prompt() method to display the content
+  vex.dialog.prompt({
+  className: 'vex-theme-flat-attack',    // set css theme for this dialog box
+  message: msg,             // adds the content message
+  placeholder: 'I am',      // text displayed in Prompt input field
+
+  // calls a callback function, with simple Alert message
+  // if the user adds data in the input field, "value" contains that text, if Cancel, value is false,
+  // if OK with no data added in input field, value is an object with empty "vex" property
+  callback: function(value) {
+    if(value == false) var re = 'GOoD';
+    else if(value.vex == '') var re = 'GOoD no person';
+    else var re = value +' - Have a GOoD life.';
+    return alert(re);
+  }
+});
+};
+
+// registers click event to #vex_t3, to call the vex_prompt1() function
+$('body').on('click', '#vex_t3', function(){ vex_prompt1(vex_msg2); } );
+
+</script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = {top: -5, right: -5, bottom: -5, left: -5},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 10])
+    .on("zoom", zoomed);
+
+var drag = d3.behavior.drag()
+    .origin(function(d) { return d; })
+    .on("dragstart", dragstarted)
+    .on("drag", dragged)
+    .on("dragend", dragended);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.right + ")")
+    .call(zoom);
+
+var rect = svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .style("fill", "none")
+    .style("pointer-events", "all");
+
+var container = svg.append("g");
+
+container.append("g")
+    .attr("class", "x axis")
+  .selectAll("line")
+    .data(d3.range(0, width, 10))
+  .enter().append("line")
+    .attr("x1", function(d) { return d; })
+    .attr("y1", 0)
+    .attr("x2", function(d) { return d; })
+    .attr("y2", height);
+
+container.append("g")
+    .attr("class", "y axis")
+  .selectAll("line")
+    .data(d3.range(0, height, 10))
+  .enter().append("line")
+    .attr("x1", 0)
+    .attr("y1", function(d) { return d; })
+    .attr("x2", width)
+    .attr("y2", function(d) { return d; });
+
+d3.tsv("dots.tsv", dottype, function(error, dots) {
+  dot = container.append("g")
+      .attr("class", "dot")
+    .selectAll("circle")
+      .data(dots)
+    .enter().append("circle")
+      .attr("r", 5)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .call(drag);
+});
+
+function dottype(d) {
+  d.x = +d.x;
+  d.y = +d.y;
+  return d;
+}
+
+function zoomed() {
+  container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
+
+function dragstarted(d) {
+  d3.event.sourceEvent.stopPropagation();
+  d3.select(this).classed("dragging", true);
+}
+
+function dragged(d) {
+  d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+}
+
+function dragended(d) {
+  d3.select(this).classed("dragging", false);
+}
+
+</script>
+
+    
+  
+  
+  </body>
+</html>
