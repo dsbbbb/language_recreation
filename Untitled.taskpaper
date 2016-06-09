@@ -1,0 +1,49 @@
+MVP DSB Show:
+	day of:
+		- fix up 
+			- getting to 0 
+			- annotation frameowrk
+		- Prepare example so fusing IGL or Living Text with the high school requirement piece and or one of our pieces and show a diefferent way to present knowledge to people and how 
+	- @reallyDo Make a soundboard for the show. Could either link to the file locally on my computer, or if that doesn't auto play, I could link through a simple webpage that would play them (and then it will be amazing to punch them in/play them throughout as 'callbacks' and what not
+		- Trump I know words
+		- Iverson "Praxis"
+		- Nate Dogg "Hold Up Ey" - the sound of the confrontation with the problematic 
+	with Olivia:
+		- go through show and time, and either screen or audio record.
+		- Choose fonts and colors
+	Working Controllers:
+		- focus/unfocus selected cmdShiftF
+		- toggle/untoggle notes view cmdShiftT
+		- Slides mode?!?! Explore, but it looks like I can do some transition stuff and maybe set up connection between I know I will want to transition between
+			- This good be good for the 'major traditions' so take us to new parts of the map
+				- also I think as quick links to the main people and phases
+				-
+	- push everything to github
+	Next Pomodoro:
+		- Test out and try to use the existing ithoughts .ks and then make a .km pallets for the ones I want too add
+			- also try trackpadd to device about but vs or with .km
+		- See if I quickly can design or imagine an annotation space that would be on the web where I could show my content like images and video with the ability to use the canvas as an annotator
+		- 
+		- Create a keyboard Maestro pallets to use with the performance as a "controller"
+Practice 'playing' the instrument/create the notes and key(board shortcut)s
+	- fuck I forgot to bring the trackpad. what might it be important for
+		Recurring actions for automation:
+			@want  go to a particular node
+				@solution Create a keyboard maestro set of macros
+				- go to my family node
+				- pull up edit map @solved powerKey+E
+				- back to previous node
+				- each main persons name to either search or go to named node
+				- create some "symbols" reusable relationship sets, probably in another file, like a file full of functions to call on (and i would go and use copy paste for ithoughts)
+Design Elements Need Attention:
+	- Choose fonts for the People, Places, Ideas etc. and implement through ithoughts so I candy it as I go and not need to go back and adjust everything because I will want things to look very different. So I need make some design dcisions now so I can work on my way, which is how I need to be working today  
+	- Make super hero bio things for each of each I want to make them for (the philosophers)
+	- Make background and implement ithoughts hack (and don't update after!)
+	
+	- Make some paths through 
+	Show Needs a Force. I need to create a couple paths through, to make it easier to go through later with improvisation (and to see what pieces I am still really missing)
+		MVP-Necessary Missing Parts:
+			- 
+	- Write an opening "where are we, when are we"
+		- this is my statement of purpose, artists statement, mission statement, this is what I've been screaming about in the dark and light, this is the symbols and messages everyone here who has lived with me finds scribbled and scrapped on the floor, or bed, or fridge, or if I'm feeling particularly proud of my alien scribblings, pinned up on a cork board to share with the house...none of who, more anyone besides me (and Leonor) read alien language that I am making up as I go, so this is my alien language, transliterated, into as the best I can communicable meaningful presentation, this is me revealing as best I can the inner working of my hear and brain, it is practicing Paulo Freiere's Pedogogy of the Opressed, it is scary because it is unfinished, forever unfinished, like us humans, and earth, and time and reality, all pictures meant to be painted over, not taken in, tested on, told is not ours, to scrawl, billboard style letters, our names and who we be, and who our People Be, it is my accountability communique to Ella Baker, it is asking my people what we think? How we think? and how we want to thinkTalkBeAboutIt!!! It's Praxis baby, its all Praxis...(iverson voice) Praxis, praxis, we talking bout Praxis (maybe get clip and put subtitles over it saying praxis?!?)
+	- 
